@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:padding="5dp"
-    android:textSize="15sp"
-    android:background="@drawable/simple_list_selector"
-    android:layout_height="match_parent"
-    android:textColor="#8ab1dd" >
-</TextView>
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/countryFlag"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:text="Country Name"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/countryName"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/countryDescription"/>
+
+    </LinearLayout>
+
+</LinearLayout>
